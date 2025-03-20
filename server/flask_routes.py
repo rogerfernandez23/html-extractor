@@ -42,7 +42,7 @@ def upload_file():
         insert_to_sheets(data_all)
 
         flash('Arquivo enviado com sucesso!')
-        return redirect(url_for('index'))
+        return redirect(url_for('index.html'))
     else:
         flash('Arquivo inválido!')
         return redirect(request.url)
