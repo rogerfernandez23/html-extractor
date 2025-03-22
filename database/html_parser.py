@@ -30,8 +30,8 @@ def extract_from_html(file_path):
             values = user.find_all_next('td', class_='tot_valor_width', limit=50)
 
             data_row = {
-                'nome': nome,
-                'cpf': cpf
+                'Funcionário': nome,
+                'Matrícula': cpf
             }
 
             for title, value in zip(titles, values):

@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload de HTML</title>
+    <title>Upload de Arquivo</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        form { margin: 20px auto; padding: 20px; border: 1px solid #ddd; width: 50%; }
-        button { background-color: #28a745; color: white; padding: 10px; border: none; cursor: pointer; }
-        button:hover { background-color: #218838; }
-        .data-box { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .container { max-width: 500px; margin: auto; display: flex; flex-direction: column;}
+        .flash { color: green; font-weight: bold; }
+        .flash.error { color: red; }
     </style>
 </head>
 <body>
 
-    <h2>Envie um Arquivo HTML</h2>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".html">
+<div class="container">
+    <h2>INSIRA AS FREQUÊNCIAS EM HTML:</h2> 
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p class="flash {{ category }}">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".html" required>
         <button type="submit">Enviar</button>
     </form>
 
     {% if data %}
         <h3>Dados Extraídos:</h3>
-        <div class="data-box">
-            <pre>{{ data | tojson(indent=2) }}</pre>
-        </div>
+        <pre>{{ data | tojson(indent=4) }}</pre>
     {% endif %}
+</div>
 
 </body>
 </html>
