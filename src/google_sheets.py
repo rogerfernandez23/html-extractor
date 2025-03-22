@@ -1,5 +1,5 @@
 import gspread
-from config import get_google_sheets_client
+from src.config import get_google_sheets_client
 from datetime import datetime
 
 def insert_to_sheets(data_all, spreadsheet_name='Teste'):

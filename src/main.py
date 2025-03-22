@@ -1,5 +1,5 @@
-from html_parser import extract_from_html
-from google_sheets import insert_to_sheets
+from src.html_parser import extract_from_html
+from src.google_sheets import insert_to_sheets
 
 def main():
     file_path = '../files/test.html'
