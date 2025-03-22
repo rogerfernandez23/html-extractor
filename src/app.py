@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from werkzeug.utils import secure_filename
-from html_parser import extract_from_html
+from src.html_parser import extract_from_html
 import os
 from google_sheets import insert_to_sheets
 
