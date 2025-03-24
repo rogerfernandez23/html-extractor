@@ -6,7 +6,7 @@ def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
     client = get_google_sheets_client()
     spreadsheet = client.open(spreadsheet_name)
 
-    sheet_name = datetime.now().strftime('Relatório_%Y%m%d')
+    sheet_name = datetime.now().strftime('Relatório_%Y%m%d_%H%M%S')
     
     sheet = spreadsheet.add_worksheet(title=sheet_name, rows="100", cols="50")
 
