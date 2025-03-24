@@ -12,6 +12,8 @@ def get_google_sheets_client():
     if not credentials:
         raise ValueError("❌ Variável de ambiente 'GOOGLE_SHEETS_CREDENTIALS' não encontrada!")
     
+    print(credentials)
+
     creds_dict = json.loads(credentials)
     creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     
@@ -25,7 +27,7 @@ def get_google_sheets_client():
 # Testando a conexão com o Google Sheets
 try:
     client = get_google_sheets_client()
-    spreadsheet = client.open("Teste")
+    spreadsheet = client.open("PAGAMENTOS")
     sheet = spreadsheet.sheet1
     print("✅ Acesso à planilha validado com sucesso!")
 except gspread.exceptions.APIError as e:

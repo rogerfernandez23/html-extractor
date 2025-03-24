@@ -2,7 +2,7 @@ import gspread
 from src.config import get_google_sheets_client
 from datetime import datetime
 
-def insert_to_sheets(data_all, spreadsheet_name='Teste'):
+def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
     client = get_google_sheets_client()
     spreadsheet = client.open(spreadsheet_name)
 
