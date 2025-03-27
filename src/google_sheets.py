@@ -14,6 +14,8 @@ def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
     
     sheet = spreadsheet.add_worksheet(title=sheet_name, rows="100", cols="50")
 
+    data_all = list(data_all)
+
     headers = list(data_all[0].keys())
     values = [list(item.values()) for item in data_all]
 
