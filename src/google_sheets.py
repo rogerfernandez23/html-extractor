@@ -14,12 +14,22 @@ def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
     
     sheet = spreadsheet.add_worksheet(title=sheet_name, rows="100", cols="50")
 
-    data_all = list(data_all)
+    first_item = next(data_all, None)  
 
-    headers = list(data_all[0].keys())
-    values = [list(item.values()) for item in data_all]
+    if first_item is not None:
+        headers = list(first_item.keys())  
+        sheet.append_row(headers) 
+        sheet.append_row(list(first_item.values())) 
 
-    sheet.batch_update([{"range": "A1", "values": [headers]}, {"range": "A2", "values": values}])
+        for item in data_all:
+            sheet.append_row(list(item.values())) 
+            
+    # data_all = list(data_all)
+
+    # headers = list(data_all[0].keys())
+    # values = [list(item.values()) for item in data_all]
+
+    # sheet.batch_update([{"range": "A1", "values": [headers]}, {"range": "A2", "values": values}])
 
     print("✅ Dados inseridos na planilha com sucesso!")
     return sheet_name
