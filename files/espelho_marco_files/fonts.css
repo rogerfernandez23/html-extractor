@@ -1,0 +1,480 @@
+@font-face 
+{
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Roboto Condensed'),
+	url('RobotoCondensed_regular.ttf') format('truetype'),  
+	url('RobotoCondensed.woff') format('woff'), 
+	url('RobotoCondensed.woff2') format('woff2');
+}
+
+@font-face 
+{
+font-family: 'Roboto Condensed Light';
+src: url('RobotoCondensedLight.ttf') format('truetype');
+}
+
+@font-face 
+{
+font-family: 'Roboto Condensed Bold';
+src: url('RobotoCondensed_bold.ttf') format('truetype');
+}
+
+@font-face 
+{
+font-family: 'Futura Medium';
+font-style: normal;
+src: local('Futura Medium'), url('FuturaStdMedium.ttf') format('truetype');
+}
+
+@font-face 
+{
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight:normal;
+src: local('Bebas Neue Regular'), url('BebasNeue_regular.Netflix.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'Montserrat';
+	font-style: normal;
+	src: url('Montserrat_regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+	font-family: 'MrDeHaviland';
+	font-style: normal;
+	src: url('Mr_De_Haviland/MrDeHaviland-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'AnnieUseYourTelescope';
+	src: url('Annie_Use_Your_Telescope/AnnieUseYourTelescope-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'AmaticSC';
+	src: url('Amatic_SC/AmaticSC-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'AmaticSC';
+	src: url('Amatic_SC/AmaticSC-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Aladin';
+	src: url('Aladin/Aladin-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Damion';
+	src: url('Damion/Damion-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'AlexBrush';
+	src: url('Alex_Brush/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'GrandHotel';
+	src: url('Grand_Hotel/GrandHotel-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'BebasNeue_regular.Netflix.ttf';
+	src: url('BebasNeue_regular.Netflix.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Gloria_Hallelujah/GloriaHallelujah.ttf';
+	src: url('Gloria_Hallelujah/GloriaHallelujah.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'JustAnotherHand';
+	src: url('Just_Another_Hand/JustAnotherHand-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'GochiHand';
+	src: url('Gochi_Hand/GochiHand-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Calligraffitti';
+	src: url('Calligraffitti/Calligraffitti-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Lateef/LateefRegOT.ttf';
+	src: url('Lateef/LateefRegOT.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'ArchitectsDaughter';
+	src: url('Architects_Daughter/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Kalam';
+	src: url('Kalam/Kalam-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'KalamLight';
+	src: url('Kalam/Kalam-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'KalamBold';
+	src: url('Kalam/Kalam-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Give_You_Glory';
+	src: url('Give_You_Glory/GiveYouGlory.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Itim';
+	src: url('Itim/Itim-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MeriendaBold';
+	src: url('Merienda/Merienda-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Merienda';
+	src: url('Merienda/Merienda-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MarckScript';
+	src: url('Marck_Script/MarckScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'GreatVibes';
+	src: url('Great_Vibes/GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Italianno';
+	src: url('Italianno/Italianno-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Montez';
+	src: url('Montez/Montez-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'DancingScriptBold';
+	src: url('Dancing_Script/DancingScript-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'DancingScript';
+	src: url('Dancing_Script/DancingScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'KaushanScript';
+	src: url('Kaushan_Script/KaushanScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'BadScript';
+	src: url('Bad_Script/BadScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Kristi';
+	src: url('Kristi/Kristi-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Covered_By_Your_Grace';
+	src: url('Covered_By_Your_Grace/CoveredByYourGrace.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MaliExtraLight';
+	src: url('Mali/Mali-ExtraLight.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MaliLight';
+	src: url('Mali/Mali-Light.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Mali';
+	src: url('Mali/Mali-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MaliBold';
+	src: url('Mali/Mali-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'CaveatBold';
+	src: url('Caveat/Caveat-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Caveat';
+	src: url('Caveat/Caveat-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Courgette';
+	src: url('Courgette/Courgette-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MrDafoe';
+	src: url('Mr_Dafoe/MrDafoe-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Arizonia';
+	src: url('Arizonia/Arizonia-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Indie_Flower';
+	src: url('Indie_Flower/IndieFlower.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'NanumBrushScript';
+	src: url('Nanum_Brush_Script/NanumBrushScript-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Handlee';
+	src: url('Handlee/Handlee-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'HomemadeApple';
+	src: url('Homemade_Apple/HomemadeApple-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'LeckerliOne';
+	src: url('Leckerli_One/LeckerliOne-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Charmonman';
+	src: url('Charmonman/Charmonman-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'CharmonmanBold';
+	src: url('Charmonman/Charmonman-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'HerrVonMuellerhoff';
+	src: url('Herr_Von_Muellerhoff/HerrVonMuellerhoff-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'ComingSoon';
+	src: url('Coming_Soon/ComingSoon-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'MeriendaOne';
+	src: url('Merienda_One/MeriendaOne-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Charm';
+	src: url('Charm/Charm-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'CharmBold';
+	src: url('Charm/Charm-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Cookie';
+	src: url('Cookie/Cookie-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'CraftyGirls';
+	src: url('Crafty_Girls/CraftyGirls-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'CaveatBrush';
+	src: url('Caveat_Brush/CaveatBrush-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Delius';
+	src: url('Delius/Delius-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'BerkshireSwash';
+	src: url('Berkshire_Swash/BerkshireSwash-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'Allura';
+	src: url('Allura/Allura-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'ClickerScript';
+	src: url('Clicker_Script/ClickerScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-500Italic.eot');
+	src: url('MuseoSans/MuseoSans-500Italic.woff') format('woff'),
+		url('MuseoSans/MuseoSans-500Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-900Italic.eot');
+	src: url('MuseoSans/MuseoSans-900Italic.woff') format('woff'),
+		url('MuseoSans/MuseoSans-900Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-700Italic.eot');
+	src: url('MuseoSans/MuseoSans-700Italic.woff') format('woff'),
+		url('MuseoSans/MuseoSans-700Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-300Italic.eot');
+	src: url('MuseoSans/MuseoSans-300Italic.woff') format('woff'),
+		url('MuseoSans/MuseoSans-300Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-500.eot');
+	src: url('MuseoSans/MuseoSans-500.woff') format('woff'),
+		url('MuseoSans/MuseoSans-500.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-700.eot');
+	src: url('MuseoSans/MuseoSans-700.woff') format('woff'),
+		url('MuseoSans/MuseoSans-700.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face  {
+	font-family: 'Museo Sans';
+	src: url('MuseoSans/MuseoSans-900.eot');
+	src: url('MuseoSans/MuseoSans-900.woff') format('woff'),
+		url('MuseoSans/MuseoSans-900.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("MuseoSans/MuseoSans-300.eot"); /* IE9 Compat Modes */
+  src: url("MuseoSans/MuseoSans-300.otf") format("opentype"), /* Open Type Font */
+    url("MuseoSans/MuseoSans-300.svg") format("svg"), /* Legacy iOS */
+    url("MuseoSans/MuseoSans-300.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("MuseoSans/MuseoSans-300.woff") format("woff"), /* Modern Browsers */
+    url("MuseoSans/MuseoSans-300.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal;
+}

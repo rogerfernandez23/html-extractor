@@ -8,17 +8,17 @@ def get_google_sheets_client():
              'https://www.googleapis.com/auth/drive']
 
     # Configurações de Ambiente em Produção
-    credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
-    if not credentials:
-        raise ValueError("❌ Variável de ambiente 'GOOGLE_SHEETS_CREDENTIALS' não encontrada!")
+    # credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
+    # if not credentials:
+    #     raise ValueError("❌ Variável de ambiente 'GOOGLE_SHEETS_CREDENTIALS' não encontrada!")
     
-    print(credentials)
+    # print(credentials)
 
-    creds_dict = json.loads(credentials)
-    creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
+    # creds_dict = json.loads(credentials)
+    # creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     
     # Configurações de Ambiente Local
-    # creds = ServiceAccountCredentials.from_json_keyfile_name('../credentials.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('../credentials.json', scope)
     
     client = gspread.authorize(creds)
 

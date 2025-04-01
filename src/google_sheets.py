@@ -1,5 +1,5 @@
 import gspread
-from src.config import get_google_sheets_client
+from config import get_google_sheets_client
 from datetime import datetime
 
 def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
@@ -9,27 +9,32 @@ def insert_to_sheets(data_all, spreadsheet_name='PAGAMENTOS'):
     
     client = get_google_sheets_client()
     spreadsheet = client.open(spreadsheet_name)
+    
 
     sheet_name = datetime.now().strftime('Relatório_%Y%m%d_%H%M%S')
     
     sheet = spreadsheet.add_worksheet(title=sheet_name, rows="100", cols="50")
 
-    first_item = next(data_all, None)  
+    all_headers = set()  
+    for item in data_all:
+        all_headers.update(item.keys()) 
 
-    if first_item is not None:
-        headers = list(first_item.keys())  
-        sheet.append_row(headers) 
-        sheet.append_row(list(first_item.values())) 
+    fixed_headers = ['Funcionário', 'Matrícula']
+    
+    headers = sorted(list(all_headers - set(fixed_headers)))
+    headers = fixed_headers + headers
 
-        for item in data_all:
-            sheet.append_row(list(item.values())) 
-            
-    # data_all = list(data_all)
+    values = []
+    for item in data_all:
+        row = []
+        for header in headers:
+            if header in item:
+                row.append(item[header])
+            else:
+                row.append(None) 
+        values.append(row)
 
-    # headers = list(data_all[0].keys())
-    # values = [list(item.values()) for item in data_all]
-
-    # sheet.batch_update([{"range": "A1", "values": [headers]}, {"range": "A2", "values": values}])
+    sheet.batch_update([{"range": "A1", "values": [headers]}, {"range": "A2", "values": values}])
 
     print("✅ Dados inseridos na planilha com sucesso!")
     return sheet_name

@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from werkzeug.utils import secure_filename
-from src.html_parser import extract_from_html
+from html_parser import extract_from_html
 import os
-from src.google_sheets import insert_to_sheets
+from google_sheets import insert_to_sheets
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'html'}

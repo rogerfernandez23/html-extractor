@@ -16,6 +16,7 @@ def extract_from_html(file_path):
     for user in user_info:
         nome = None
         cpf = None
+        cols = user.find_all('td')
 
         cols = user.find_all('td')
 
@@ -37,14 +38,10 @@ def extract_from_html(file_path):
             for title, value in zip(titles, values):
                 title_text = title.get_text(strip=True)
                 value_text = value.get_text(strip=True)
-                data_row.setdefault(title_text, value_text)
-
-            yield data_row
             
-            #     if title_text not in data_row:  
-            #         data_row[title_text] = value_text
-
-            # data.append(data_row) 
+                if title_text not in data_row:  
+                    data_row[title_text] = value_text
+            data.append(data_row) 
 
     if not data:
         print('⚠️ Nenhuma informação encontrada.')
